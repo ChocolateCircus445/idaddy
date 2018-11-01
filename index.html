@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="daddy.css">
+    <script src="daddy.js"></script>
+    <script src="easy.js"></script>
+  </head>
+  <body style="font-family: arial; background-color: white; /*Support for Cordova*/">
+    <h1 style="text-align: center;">iDaddy</h1>
+    <p style="text-align: center;">The world's #1 virtual daddy!</p>
+    <div style="border-style: solid; width: 100%; height: 75%; overflow-y: scroll; /*line-height: 0.5;*/" id="daddybox">
+    </div>
+    <table style="width: 100%;">
+      <tr style="width: 100%;">
+        <td style="width: 90%;">
+          <input type="text" placeholder="Say hi to daddy!" style="width: 100%;" onkeypress="checkKey(event)" id="daddyTextBox">
+        </td>
+        <td>
+          <div id="send" style="background-color: blue; border-color: blue; border-style: solid; color: white; border-radius: 15px; text-align: center; width: 100%" onclick="send()">Send to daddy</div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <div style="text-align: center;">
+      <span style="font-family: Times;"><i>"Oh, daddy!"</i></span><span> -Mallow, Pokémon Sun and Moon (anime)</span>
+    </div>
+  </body>
+</html>

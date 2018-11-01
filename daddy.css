@@ -1,0 +1,16 @@
+div.userMessage {
+  float: right;
+  background-color: lime;
+  color: white;
+  border-color: lime;
+  border-radius: 10px;
+  border-style: solid;
+}
+div.daddyMessage {
+  float: left;
+  background-color: rgb(229, 229, 234);
+  color: black;
+  border-color: rgb(229, 229, 234);
+  border-radius: 10px;
+  border-style: solid;
+}
