@@ -1,5 +1,5 @@
 const responses = ["I\'m daddy", "Haha, nice one, sweetheart!"];
-const specialResponse = ["I love you", "i love you", "I love u", "i love u", "I wuv you", "i wuv you", "I wuv u", "i wuv u"];
+const specialResponse = ["i love you", "i love u", "i wuv you", "i wuv u"];
 function send() {
   var t = document.getElementById('daddyTextBox');
   var tv = t.value;
@@ -30,7 +30,7 @@ function send() {
       hourminute = `${hs}:${mins} ${isAM}`
       document.getElementById("readMessage").innerHTML = `Read ${hourminute}`;
       document.getElementById("readMessage").removeAttribute("id");
-      if (!specialResponse.includes(tv)) {
+      if (!specialResponse.includes(tv.toLowercase())) {
           var daddyr = randomNumber(1, responses.length) - 1;
           var daddyrs = responses[daddyr];
           document.getElementById('daddybox').innerHTML += `<br><div class="daddyMessage">${daddyrs}</div><br><br>`;
