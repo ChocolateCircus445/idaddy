@@ -30,7 +30,7 @@ function send() {
       hourminute = `${hs}:${mins} ${isAM}`
       document.getElementById("readMessage").innerHTML = `Read ${hourminute}`;
       document.getElementById("readMessage").removeAttribute("id");
-      if (!specialResponse.includes(tv.toLowercase())) {
+      if (!specialResponse.includes(tv.toLowerCase())) {
           var daddyr = randomNumber(1, responses.length) - 1;
           var daddyrs = responses[daddyr];
           document.getElementById('daddybox').innerHTML += `<br><div class="daddyMessage">${daddyrs}</div><br><br>`;
