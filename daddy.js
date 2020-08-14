@@ -34,6 +34,8 @@ function send() {
           var daddyr = randomNumber(1, responses.length) - 1;
           var daddyrs = responses[daddyr];
           document.getElementById('daddybox').innerHTML += `<br><div class="daddyMessage">${daddyrs}</div><br><br>`;
+      } else {
+          document.getElementById('daddybox').innerHTML += `<br><div class="daddyMessage">That's a "poggers!"</div><br><br>`;
       }
     }, 2000)
   }
